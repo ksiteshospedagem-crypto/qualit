@@ -1,0 +1,296 @@
+body, html{
+    height: 100vh;/*altura*/
+    width: 100vw;/*largura*/
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color:black;
+}
+
+.cont-base{
+    height: 90vh;
+    width: 78vw;
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: flex-start;/*gruda na esquerda*/
+    align-items: center;/*deixa os items no centro*/
+
+    gap: 7px;
+    padding: 7px;
+
+    border-radius: 15px;/*deixa as bordas redondas*/
+
+    overflow: hidden;
+
+}
+
+.cont-rol{
+    height: 90vh;
+    width: 16vw;
+
+    background-color: aquamarine;
+    border-radius: 15px;
+
+    border: 4px solid rgb(83, 83, 83);
+
+    box-shadow: 0px 0px 10px rgba(77, 68, 68, 0.616),
+                0PX 0PX 10PX rgba(102, 56, 56, 0.432),
+                0PX 0PX 10PX black;
+
+
+    gap: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.seleção{
+    width: 15vw;
+
+    cursor: pointer;
+
+    border-radius: 15px;
+
+    border: 4px solid rgb(83, 83, 83);
+
+    box-shadow: 0px 0px 10px rgba(77, 68, 68, 0.616),
+                0PX 0PX 10PX rgba(102, 56, 56, 0.432),
+                0PX 0PX 10PX black;
+}
+
+
+.painel{
+    height: 89vh;
+
+    background-color: aquamarine;
+    border: 4px solid rgb(83, 83, 83);
+
+    flex: 1;
+
+    display: none;
+    justify-content:right;/*gruda na esquerda*/
+    align-items:flex-end;/*deixa os items no centro*/
+
+    
+    border-radius: 15px;/*deixa as bordas redondas*/
+
+    overflow: hidden;
+}
+
+#painel-arquivosal{
+    flex-direction: column;
+    justify-content: end; /* exibicao no topo/meio, chat-input embaixo */
+    align-items: center;
+    gap: 9px;
+
+}
+
+#painel-dimensional{
+    flex-direction: column;
+    justify-content: end; /* exibicao no topo/meio, chat-input embaixo */
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+    
+}
+
+#painel-cliente{
+    flex-direction: flex-start;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+
+}
+
+.text-cliente{
+    height: 8vh;
+    width: 11vw;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background-color: rgb(0, 195, 255);
+}
+
+.visualização{
+
+    height: 86vh;
+    width: 72%;
+
+    background-color: aqua;
+
+    border: 4px solid rgba(0, 0, 0, 0.634);
+
+    box-shadow: 0px 0px 10px,
+                0px 0px 10px,
+                0px 0px 10px,
+}
+
+.lis-client{
+    height: 86vh;
+    width: 15vw;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+
+    overflow: scroll;
+
+    background-color: aqua;
+
+    border: 4px solid rgba(0, 0, 0, 0.634);
+
+    box-shadow: 0px 0px 10px,
+                0px 0px 10px,
+                0px 0px 10px,
+}
+
+.save{
+height: 40vw;
+width: 90%;
+
+display: flex;
+
+flex-direction: column;
+justify-content: end;
+align-items: center;
+
+background-color: aquamarine;
+
+border: 4px solid rgba(0, 0, 0, 0.437);
+
+box-shadow: 0px 0px 10px rgba(68, 87, 207, 0.827),
+            0px 0px 10px rgba(68, 87, 207, 0.827),
+            0px 0px 10px rgba(68, 87, 207, 0.827);
+}
+
+
+.grade{
+    flex: 1;                 /* ocupa tudo que sobra acima da busca */
+    min-height: 0;           /* deixa a grade encolher em vez de estourar */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;   /* 2 em cima, 2 embaixo */
+    gap: 10px;
+}
+
+#cer-rel,
+#des-rel,
+#excel-rel,
+#zip-rel{
+    height: 35vh;
+    width: 29vw;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+    border-radius: 15px;
+
+    border: 4px solid rgb(83, 83, 83);
+
+    box-shadow: 0px 0px 10px rgba(77, 68, 68, 0.616),
+                0PX 0PX 10PX rgba(102, 56, 56, 0.432),
+                0PX 0PX 10PX black;
+}
+
+
+.painel.ativo{
+    display: flex;         /* só o ativo aparece */
+}
+
+
+#painel-chat{
+    flex-direction: column;
+    justify-content: flex-end; /* exibicao no topo/meio, chat-input embaixo */
+    align-items: center;
+    
+}
+
+#exibicao{
+    height: 75vh;
+    width: 50vw;
+    
+    overflow: hidden;
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: aliceblue;
+
+    border: 3px solid rgb(77, 0, 29);
+
+    box-shadow: 0px 0px 10px rgba(53, 0, 20, 0.616),
+                0PX 0PX 10PX rgba(63, 0, 21, 0.432),
+                0PX 0PX 10PX rgb(68, 0, 0);
+                
+
+    border-radius: 15px;/*deixa as bordas redondas*/
+}
+
+.mensagem{
+    background-color: rgb(109, 181, 243);
+
+    border: 3px solid rgba(109, 181, 243, 0.5);
+
+    box-shadow: 0px 0px 10px rgba(21, 41, 43, 0.616),
+                0PX 0PX 10PX rgba(26, 54, 60, 0.432),
+                0PX 0PX 10PX rgb(14, 33, 44);
+    border-radius: 12px;
+    padding: 8px 14px;
+    margin: 3px;
+    max-width: 85%;
+    width: fit-content;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.chat-input{
+    display: flex;
+    width: 49vw;
+    justify-content: center;
+    gap: 5px;
+    margin-top: auto;          /* empurra input+botão pro fundo da .exibicao */
+}
+
+.chat{
+    width: 40vw;
+    border-radius: 5px;
+}
+
+.but{
+    width: 10vw;
+    cursor: pointer;
+    border-radius: 15px;
+
+    border: 4px solid rgb(83, 83, 83);
+
+    box-shadow: 0px 0px 10px rgba(77, 68, 68, 0.616),
+                0PX 0PX 10PX rgba(102, 56, 56, 0.432),
+                0PX 0PX 10PX black;
+}
+
+.seleção:hover,
+.but:hover{
+    background-color:chartreuse;
+}
